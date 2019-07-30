@@ -1,6 +1,6 @@
 {
   "name": "@iamgraeme/filament-react-native",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Filament package for generation of react-native files",
   "repository": "https://github.com/iamgraeme/filament-react-native.git",
   "main": "index.js",
