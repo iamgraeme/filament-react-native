@@ -11,50 +11,50 @@ exports.gen = function(Filament, flags, arg) {
       if (res === "No") {
         isFunctional = "classbased";
       }
+
+      Filament.createDir("app/components/" + arg);
+
+      Filament.createFile(
+        "app/components/" + arg + "/index.js",
+        "screenAndComponent/index." + isFunctional + ".js",
+        {
+          name: arg,
+          path: "components"
+        }
+      );
+
+      Filament.createFile(
+        "app/components/" + arg + "/styles.js",
+        "screenAndComponent/styles.js",
+        {
+          name: arg,
+          path: "components"
+        }
+      );
+
+      Filament.createFile(
+        "app/components/" + arg + "/stories.js",
+        "screenAndComponent/stories.js",
+        {
+          name: arg,
+          path: "components"
+        }
+      );
+
+      Filament.createFile(
+        "app/components/" + arg + "/" + arg + ".test.js",
+        "screenAndComponent/test.js",
+        {
+          name: arg,
+          path: "components"
+        }
+      );
+
+      Filament.regexWrite(
+        "storybook/stories/index.js",
+        /(\n\/\/ DO NOT MOVE COMMENT\n)/gim,
+        "$1import 'app/components/" + arg + "/stories';\n"
+      );
     }
-  );
-
-  Filament.createDir("app/components/" + arg);
-
-  Filament.createFile(
-    "app/components/" + arg + "/index.js",
-    "screenAndComponent/index." + isFunctional + ".js",
-    {
-      name: arg,
-      path: "components"
-    }
-  );
-
-  Filament.createFile(
-    "app/components/" + arg + "/styles.js",
-    "screenAndComponent/styles.js",
-    {
-      name: arg,
-      path: "components"
-    }
-  );
-
-  Filament.createFile(
-    "app/components/" + arg + "/stories.js",
-    "screenAndComponent/stories.js",
-    {
-      name: arg,
-      path: "components"
-    }
-  );
-
-  Filament.createFile(
-    "app/components/" + arg + "/" + arg + ".test.js",
-    "screenAndComponent/test.js",
-    {
-      name: arg,
-      path: "components"
-    }
-  );
-
-  Filament.regexWrite(
-    "storybook/stories/index.js",
-    /(\n\/\/ DO NOT MOVE COMMENT\n)/gim,
-    "$1import 'app/components/" + arg + "/stories';\n"
   );
 };
