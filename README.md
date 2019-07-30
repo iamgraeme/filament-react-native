@@ -4,6 +4,12 @@
 npm i @iamgraeme/filament-react-native --save-dev
 ```
 
+or
+
+```
+yarn add @iamgraeme/filament-react-native -D
+```
+
 Add the following code to your package.json
 
 ```
