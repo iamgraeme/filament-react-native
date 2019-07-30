@@ -25,6 +25,6 @@ npx filament new redux {reduxName}
 npx filament new network {networkControllerName}
 ```
 
-#Other
+## Other
 
 Forked from https://github.com/Vidatec/filament-rnvidatec, altered to add functional components. Thanks
