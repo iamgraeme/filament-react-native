@@ -1,0 +1,15 @@
+{
+  "name": "@iamgraeme/filament-react-native",
+  "version": "1.0.4",
+  "description": "Filament package for generation of react-native files",
+  "repository": "https://github.com/iamgraeme/filament-react-native.git",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Graeme Houston",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iamgraeme/filament-react-native.git/issues"
+  }
+}
