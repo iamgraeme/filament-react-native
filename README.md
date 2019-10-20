@@ -22,7 +22,7 @@ Add the following code to your package.json
 
 ## Usage
 
-You can either install the Filament CLI globally (`npm i filament-cli -g`) or just use `npx` to call it.
+You can either install the Filament CLI globally (`npm i filamentcli -g`) or just use `npx` to call it.
 
 ```
 npx filament new component {componentName}
